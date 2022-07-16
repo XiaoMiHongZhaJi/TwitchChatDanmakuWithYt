@@ -118,13 +118,13 @@ function apply() {
 function onClickResetToDefault() {
 	settings = { 
 		enabled: true, 
-		duration: 7, 
-		font_size: 28, 
+		duration: 20,
+		font_size: 16,
 		opacity: 1, 
-		show_username: false, 
-		textDecoration: 'stroke', 
-		font: 'Default', 
-		bold: true, 
+		show_username: true,
+		textDecoration: 'shadow',
+		font: 'Consolas',
+		bold: false,
 		danmaku_density: 3 
 	};
 
