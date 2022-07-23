@@ -69,3 +69,8 @@
 ._tcd_full .right-column div.tw-flex-grow-0, ._tcd_full .right-column div.tw-flex-grow-0.tw-block{
 	display: none !important;
 }
+
+#img{
+   border-radius: 10px;
+   margin-right: 4px;
+}

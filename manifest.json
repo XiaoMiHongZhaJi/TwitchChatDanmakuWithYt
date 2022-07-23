@@ -15,7 +15,7 @@
    "permissions": ["*://*.twitch.tv/*", "declarativeContent", "fontSettings"],
    "content_scripts": [{
       "css": ["css/danmaku.css"],
-      "matches": ["*://*.twitch.tv/*"],
+      "matches": ["*://*.twitch.tv/*", "*://*.youtube.com/*"],
       "js": ["lib/jQuery/jquery-3.3.1.min.js", "danmaku.js", "twitchChatDanmaku.js"]
    }],
    "page_action": {

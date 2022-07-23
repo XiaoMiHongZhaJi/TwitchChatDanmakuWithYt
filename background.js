@@ -124,5 +124,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 				});
 			}
 			break;
+		case 'YT_CHAT':
+			sendMessage("GOT_YT_CHAT", request.data);
 	}
 });
