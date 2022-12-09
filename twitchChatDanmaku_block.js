@@ -1,7 +1,7 @@
 let $logDiv = null;
 let $ytChatDiv = null;
 let $overlay = null;
-let layers = [];
+let layers = 0;
 let isVideoChat = false;
 let fontList = null;
 let isTwitch = false;
@@ -112,37 +112,35 @@ function digestChatDom(dom) {
 	return entry;
 }
 
-let timers = [];
+let danmakuList = [];
+let danmakuTimeOut = false;
+function addNewDanmakuDelay(danmaku){
+	danmakuList.push(danmaku);
+	if(!danmakuTimeOut){
+		danmakuTimeOut = true;
+		setTimeout(() => {
+			const tmp = danmakuList;
+			danmakuList = [];
+			danmakuTimeOut = false;
+			for(let i = 0; i < tmp.length; i++){
+				addNewDanmaku(tmp[i]);
+			}
+			layers = 0;
+		}, settings.duration / 3 * 1000)
+	}
+}
 
 function addNewDanmaku(entry) {
 	if (!settings.enabled || !entry) return;
 	const density = [0.25, 0.5, 0.75, 1][settings.danmaku_density] || 1;
-	let layer = 0;
 	let maxLayer = Math.floor(($overlay.height() * density) / (parseInt(settings.font_size) + 4)) - 1;
-	for (; layer < maxLayer; layer++) {
-		if (!layers[layer]) {
-			layers[layer] = true;
-			break;
-		}
+	if (layers > maxLayer) {
+		danmakuList.push(entry);
+	}else {
+		const danmaku = new Danmaku(entry, layers, settings);
+		danmaku.attachTo($overlay);
 	}
-	if (layer === maxLayer) {
-		layer = Math.floor(Math.random() * maxLayer);
-	}
-
-	const danmaku = new Danmaku(entry, layer, settings);
-
-	setTimeout(() => {
-		let width = danmaku.html.width() || 160;
-		width = Math.max(width, 160);
-		width = Math.min(width, 1000);
-		if (timers[layer]) {
-			clearTimeout(timers[layer]);
-		}
-		timers[layer] = setTimeout(() => {
-			layers[layer] = false;
-		}, Math.floor(settings.duration * width * 2));
-	}, 50);
-	danmaku.attachTo($overlay);
+	layers ++;
 }
 
 let replaced = false;
@@ -232,7 +230,7 @@ async function start() {
 
 		setTimeout(() => {
 			const chatEntry = digestChatDom(newChatDOM);
-			addNewDanmaku(chatEntry);
+			addNewDanmakuDelay(chatEntry);
 		}, 0);
 	});
 
@@ -280,28 +278,26 @@ function addNewYtDanmaku(data){
 	if(!data || !data.username){
 		return;
 	}
-	setTimeout(() => {
-		let content = '';
-		if(data.userphoto){
-			content += data.userphoto;
+	let content = '';
+	if(data.userphoto){
+		content += data.userphoto;
+	}
+	if(data.color){
+		content += '<span style="color: ' + data.color + ';">'
+	}else{
+		content += '<span style="color: white;">'
+	}
+	if (settings.show_username && data.username) {
+		content += data.username;
+		if(data.content){
+			content += '：'
 		}
-		if(data.color){
-			content += '<span style="color: ' + data.color + ';">'
-		}else{
-			content += '<span style="color: white;">'
-		}
-		if (settings.show_username && data.username) {
-			content += data.username;
-			if(data.content){
-				content += '：'
-			}
-		}
-		content += data.content;
-		content += '</span>';
-		addNewDanmaku({
-			content
-		});
-	}, 0);
+	}
+	content += data.content;
+	content += '</span>';
+	addNewDanmakuDelay({
+		content
+	});
 }
 
 function ytChatStart(){
