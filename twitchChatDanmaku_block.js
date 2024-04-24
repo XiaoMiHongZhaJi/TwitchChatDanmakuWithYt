@@ -328,7 +328,7 @@ function ytChatStart(){
 let lastUsername;
 function digestYtChatDom(dom){
 	const newChat = $(dom);
-	const userphoto = newChat.find("#author-photo").html();
+	const userphoto = newChat.find("#author-photo #img")[0].outerHTML;
 	const content = newChat.find("#message").html();
 	let username = newChat.find("#author-name").html();
 	if(username && username.indexOf("<") > -1){
