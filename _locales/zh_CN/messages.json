@@ -12,37 +12,37 @@
 		"message": "开启/关闭弹幕"
 	},
 	"lblEnable": {
-		"message": "弹幕: "
+		"message": "弹幕"
 	},
 	"tipUsername": {
 		"message": "是否显示弹幕的发送者"
 	},
 	"lblUsername": {
-		"message": "显示用户: "
+		"message": "显示用户"
 	},
 	"tipDuration": {
 		"message": "每条弹幕的持续时间"
 	},
 	"lblDuration": {
-		"message": "持续时间: "
+		"message": "持续时间"
 	},
 	"tipFontSize": {
 		"message": "弹幕的字体大小"
 	},
 	"lblFontSize": {
-		"message": "字体大小: "
+		"message": "字体大小"
 	},
 	"tipOpacity": {
 		"message": "弹幕的透明度"
 	},
 	"lblOpacity": {
-		"message": "透明度: "
+		"message": "透明度"
 	},
 	"tipDanmakuDensity": {
 		"message": "弹幕的密度"
 	},
 	"lblDanmakuDensity": {
-		"message": "弹幕密度: "
+		"message": "弹幕密度"
 	},
 	"lblDanmakuDensity_0": {
 		"message": "1/4屏"
@@ -90,7 +90,7 @@
 		"message": "更改文字样式，可能会影响性能"
 	},
 	"lblTextDecoration": {
-		"message": "文字样式: "
+		"message": "文字样式"
 	},
 	"lblNone": {
 		"message": "无"
@@ -102,18 +102,63 @@
 		"message": "描边"
 	},
 	"lblFont": {
-		"message": "字体："
+		"message": "字体"
 	},
 	"tipFont": {
 		"message": "设置弹幕的字体"
 	},
 	"lblBold": {
-		"message": "粗体："
+		"message": "粗体"
 	},
 	"tipBold": {
 		"message": "是否为粗体"
 	},
 	"default": {
 		"message": "默认"
+	},
+	"lblMode": {
+		"message": "模式"
+	},
+	"lblModeDefault": {
+		"message": "弹幕"
+	},
+	"lblModeScroll": {
+		"message": "滚动"
+	},
+	"tipMode": {
+		"message": "弹幕的呈现模式"
+	},
+	"lblScrollLocation": {
+		"message": "位置"
+	},
+	"tipScrollLocation": {
+		"message": "调整聊天的显示位置"
+	},
+	"lblScrollLocationLeft": {
+		"message": "左侧"
+	},
+	"lblScrollLocationRight": {
+		"message": "右侧"
+	},
+	"lblScrollWidth": {
+		"message": "宽度"
+	},
+	"tipScrollWidth": {
+		"message": "调整聊天的显示宽度"
+	},
+	"lblFilters": {
+		"message": "聊天过滤"
+	},
+	"lblFilterSettings": {
+		"message": "过滤设定"
+	},
+	"filtersTitle": {
+		"message": "聊天过滤"
+	},
+	"filtersTips": {
+		"message": "过滤设定，如需使用正则表达式，请用斜杠括起您的规则（例：“/.{32}/”用于过滤包含至少32个字符的消息）"
+	},
+	"lblBack": {
+		"message": "返回"
 	}
 }

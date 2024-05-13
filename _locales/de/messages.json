@@ -12,31 +12,31 @@
 		"message": "Ein-/ausschalten"
 	},
 	"lblEnable": {
-		"message": "Danmaku: "
+		"message": "Danmaku"
 	},
 	"tipUsername": {
 		"message": "Zeige der Benutzername des Kommentars"
 	},
 	"lblUsername": {
-		"message": "Benutzername: "
+		"message": "Benutzername"
 	},
 	"tipDuration": {
 		"message": "Wie lange werden die Danmaku auf dem Bildschirm bleiben"
 	},
 	"lblDuration": {
-		"message": "Dauer: "
+		"message": "Dauer"
 	},
 	"tipFontSize": {
 		"message": "Schriftgröße des Danmaku"
 	},
 	"lblFontSize": {
-		"message": "Schriftgröße: "
+		"message": "Schriftgröße"
 	},
 	"tipOpacity": {
 		"message": "Die Transparenz des Danmaku"
 	},
 	"lblOpacity": {
-		"message": "Opazität: "
+		"message": "Opazität"
 	},
 	"tipApply": {
 		"message": "Übernehmen Sie die aktuellen Einstellungen."
@@ -74,7 +74,7 @@
 		"message": "Ändern Sie die Textdekoration (kann sich auf die Leistung auswirken)"
 	},
 	"lblTextDecoration": {
-		"message": "Text-Stil: "
+		"message": "Text-Stil"
 	},
 	"lblNone": {
 		"message": "Nichts"
@@ -86,18 +86,63 @@
 		"message": "Kante"
 	},
 	"lblFont": {
-		"message": "Schriftart: "
+		"message": "Schriftart"
 	},
 	"tipFont": {
 		"message": "Stellen Sie die Schriftart des Danmaku ein."
 	},
 	"lblBold": {
-		"message": "Fett: "
+		"message": "Fett"
 	},
 	"tipBold": {
 		"message": "Fett"
 	},
 	"default": {
 		"message": "Standard"
+	},
+	"lblMode": {
+		"message": "Modus"
+	},
+	"lblModeDefault": {
+		"message": "Danmaku"
+	},
+	"lblModeScroll": {
+		"message": "Scrollen"
+	},
+	"tipMode": {
+		"message": "Wie danmaku angezeigt wird"
+	},
+	"lblScrollLocation": {
+		"message": "Position"
+	},
+	"tipScrollLocation": {
+		"message": "Wo der chat angezeigt wird"
+	},
+	"lblScrollLocationLeft": {
+		"message": "Linke"
+	},
+	"lblScrollLocationRight": {
+		"message": "Rechte"
+	},
+	"lblScrollWidth": {
+		"message": "Breite"
+	},
+	"tipScrollWidth": {
+		"message": "Wie breit der chat ist"
+	},
+	"lblFilters": {
+		"message": "Filter"
+	},
+	"lblFilterSettings": {
+		"message": "Einstellungen"
+	},
+	"filtersTitle": {
+		"message": "Filter"
+	},
+	"filtersTips": {
+		"message": "Filtereinstellungen für Regex: Um deine Regel einzuschließen, verwende Schrägstriche (z. B. \"/.{32}/\" für Nachrichten mit mindestens 32 Zeichen)."
+	},
+	"lblBack": {
+		"message": "Zurückkehren"
 	}
 }

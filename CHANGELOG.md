@@ -1,7 +1,32 @@
 ## <span id="ChangeLog">Change Logs</span>
 
+### 2.1.0
+> * Added filter settings, you now may filter messages with your own rules
+
+### 2.0.4
+> * Fixed the Danmaku not showing up together with Extension [FrankerFaceZ](https://chrome.google.com/webstore/detail/frankerfacez/fadndhdgpmmaapbmfcknlfgcflmmmieb).
+
+### 2.0.3
+> * Improve the i18n for Japanese [@siloneco](https://github.com/siloneco)
+> * The danmaku should be more compact now.
+> * Adjusted the settings for scroll mode.
+
+### 2.0.2
+> * Added a new mode for Danmaku: scroll
+> * Fixed a performance issue.
+
+### 2.0.1
+> * Added a button for full webside mode.
+> * Bunch of bug fixes.
+
+### 2.0.0
+> * Completely rebuilt the app, visually upgraded(or downgrade) the UI, upgraded to manifest v3.
+
+### 1.4.11
+> * Fixed a problem that danmaku is not showing.
+
 ### 1.4.10
-> * Fixed a problem causes damnaku is not showing on VODs
+> * Fixed a problem causes danmaku is not showing on VODs
 ### 1.4.9
 > * Fixed a glitch that danmaku is not showing.
 
@@ -109,6 +134,32 @@
 <hr/>
 
 ## <span id="ChangeLogCN">更新日志</span>
+
+### 2.1.0
+> * 增加了聊天过滤，现在你可以通过过滤器来过滤聊天消息！
+
+### 2.0.4
+> * 修复在用户安装扩展[FrankerFaceZ](https://chrome.google.com/webstore/detail/frankerfacez/fadndhdgpmmaapbmfcknlfgcflmmmieb)后弹幕不显示的问题。
+
+### 2.0.3
+> * 改善了日语的翻译质量 [@siloneco](https://github.com/siloneco)
+> * 弹幕现在会在尽可能不重叠的情况下尽量紧凑。
+> * 调整了滚动模式的一些设置。
+
+### 2.0.2
+> * 增加新的弹幕模式：滚动
+> * 修复性能问题。
+
+### 2.0.1
+> * 增加了一个可以网页全屏的按钮。
+> * 很多BUG修复。
+
+### 2.0.0
+> * 完全重构了代码，升级至manifest v3，UI升级（降级？）。
+> * 折叠聊天区域现在不会导致弹幕无法加载了（可能会有BUG）。
+
+### 1.4.11
+> * 修复了弹幕无法显示的问题。
 
 ### 1.4.10
 > * 修复了在直播录像中无法显示弹幕的问题。
