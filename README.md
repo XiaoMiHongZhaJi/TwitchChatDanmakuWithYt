@@ -1,3 +1,4 @@
+# ！已失效，待维护...！
 # Twitch Chat Danmaku With YouTube
 ## 在twitch中同时显示twitch和YouTube弹幕
 ### 已支持YouTube头像和表情。特殊用途，懂得都懂（dddd
